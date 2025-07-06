@@ -19,7 +19,7 @@ int main() {
 	srand(time(0));
 
     password = rand() % 9000 + 1000;
-    cout << password <<endl;
+    cout << "Åifre (Gizli) : " << password <<endl;
     
     for(int i = 3;i>=0;i--){
     	
@@ -32,7 +32,7 @@ int main() {
     	int counter = 0,anti_counter = 0;
     	multiplication = 1;
     	
-    	cout << "Şifreyi tahmin et: ";
+    	cout << "Ãifreyi tahmin et: ";
     	cin >> guess;
     	
      for(int j = 3;j>=0;j--){
@@ -51,7 +51,7 @@ int main() {
 		   }}
 		   
 		   if(counter == 4){
-		   cout << "Aferin şifreyi buldun.."; 
+		   cout << "Aferin Ã¾ifreyi buldun.."; 
 		   break;
 	}
 		for(int b =0;b<4;b++){
@@ -65,8 +65,8 @@ int main() {
 		}
 		}
    	
-   	cout << counter <<" sayı doğru yerde." << endl;
-   	cout << anti_counter-counter<<" sayı doğru ama yeri yanlış." << endl;	
+   	cout << counter <<" sayÃ½ doÃ°ru yerde." << endl;
+   	cout << anti_counter-counter<<" sayÃ½ doÃ°ru ama yeri yanlÃ½Ã¾." << endl;	
   
     	
 	}while(guess != password);
